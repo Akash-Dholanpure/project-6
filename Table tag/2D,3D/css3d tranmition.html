@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>css 3d tranmistion</title>
+	<style>
+		body{
+			font-family: "comic sans ms",sans-serif;
+			margin-bottom: 200px;
+		}
+		button{
+			background-color: red;
+			color: white;
+			font-size: 40px;
+			border: none;
+			padding: 12px 35px;
+			margin-left: 100px;
+			box-shadow: 0 0 5px black;
+			transition: all 0.5s;
+		}
+		#rotateX:hover{
+			transform: perspective(400px) rotateX(-45deg);
+		}
+		#rotateY:hover{
+			transform: perspective(400px) rotateY(-20deg);
+		}
+		#rotateZ:hover{
+			transform: perspective(400px) rotateZ(45deg);
+		}
+		#rotated3d:hover{
+			transform: rotate3d(1,1,1,45deg);
+		}
+	</style>
+</head>
+<body>
+	<h3>RotateX(180deg)</h3>
+	<button id="rotateX">
+		rotateX
+	</button>
+	<br><br><hr>
+	<h3>RotateY(180deg)</h3>
+	<button id="rotateY">
+		rotateY
+	</button>
+	<br><br><hr>
+	<h3>RotateZ(180deg)</h3>
+	<button id="rotateZ">
+		rotateZ
+	</button>
+	<br><br><hr>
+	<h3>Rotate 3D()</h3>
+	<button id="rotated3d">
+		rotated3d
+	</button>
+
+</body>
+</html>

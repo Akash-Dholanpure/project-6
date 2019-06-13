@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<title> table tag </title>
+<style>
+body{
+ font-family: "Comic Sans MS",sans-serif;
+
+}
+table , th , td{
+	border: 2px solid orangered;
+border-collapse: collapse;
+text-align: center;
+padding: 10px;
+}
+table{
+	width: 100%;
+	box-shadow: 0 0 5px;
+}
+#orange thead{
+	background-color: orangered;
+	color: white;
+}
+#orange tbody{
+	background-color: lightsalmon;
+}
+</style>
+</head>
+<body>
+<h3>Simple Table</h3>
+<table>
+<thead>
+	<tr>
+		<th>SNO</th>
+		<th>NAME</th>
+		<th>COMPANY</th>
+		<th>DESIGNATION</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>1</td>
+		<td>Johan</td>
+		<td>Infosys</td>
+		<td>Manager</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Rajan</td>
+		<td>Microsoft</td>
+		<td>Software engg</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Wilson</td>
+		<td>Google</td>
+		<td>Tech lead</td>
+	</tr>
+	
+</tbody>
+</table>
+
+<h3>Tablr with Cols span</h3>
+<table>
+<thead>
+	<tr>
+		<th>SNO</th>
+		<th>NAME</th>
+		<th colspan="2">COMPANY</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>1</td>
+		<td>Johan</td>
+		<td>Infosys</td>
+		<td>Manager</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Rajan</td>
+		<td>Microsoft</td>
+		<td>Software engg</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Wilson</td>
+		<td>Google</td>
+		<td>Tech lead</td>
+	</tr>
+	</tbody>
+</table>
+	<h3>Table woit row span</h3>
+	<table>
+	<thead>
+	<tr>
+		<th>SNO</th>
+		<th>NAME</th>
+		<th>COMPANY</th>
+		<th>DESIGNATION</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td rowspan="3">1</td>
+		<td>Johan</td>
+		<td>Infosys</td>
+		<td>Manager</td>
+	</tr>
+	<tr>
+		
+		<td>Rajan</td>
+		<td>Microsoft</td>
+		<td>Software engg</td>
+	</tr>
+	<tr>
+		
+		<td>Wilson</td>
+		<td>Google</td>
+		<td>Tech lead</td>
+	</tr>
+</tbody>
+</table>
+<h3>Castem table with CSS</h3>
+
+<table id="orange">
+
+<thead>
+	<tr>
+		<th>SNO</th>
+		<th>NAME</th>
+		<th>COMPANY</th>
+		<th>DESIGNATION</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>1</td>
+		<td>Johan</td>
+		<td>Infosys</td>
+		<td>Manager</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>Rajan</td>
+		<td>Microsoft</td>
+		<td>Software engg</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>Wilson</td>
+		<td>Google</td>
+		<td>Tech lead</td>
+	</tr>
+</tbody>
+</table>
+</body>
+</html>

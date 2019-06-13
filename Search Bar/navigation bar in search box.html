@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>search box in navigation bar</title>
+	<style>
+		body{
+			background: skyblue;
+			margin: 0px;
+		}
+		.manu{
+			width: 100%;
+			background: #142b47;
+			overflow: auto;
+		}
+		.manu a{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			line-height: 60px;
+			float: left;
+			text-decoration: none;
+			width: 130px;
+			display: block;
+			text-align: center;font-size: 18px;
+			font-family: arial,sans-serif;
+			letter-spacing: 0.5px;
+			color: white;
+		}
+		.manu a:hover{
+			background-color: red;
+			opacity: 0.5;
+			font-size: 19px;
+		}
+		.search-box{
+			 margin-top: 15px;
+			 float: right;
+			 margin-right: 100px;
+
+
+
+		}
+		input[type=text]{
+			padding: 7px;
+			border: none;
+			font-size: 15px;
+			font-family: arial,sans-serif;
+			
+	
+		}
+		button{
+
+				float: right;
+				background: orange;
+				color: white;
+				
+				cursor: pointer;
+				position: relative;
+				padding: 7px;
+				font-family: arial,sans-serif;
+				border: none;
+				font-size: 15px;
+		}
+
+	</style>
+</head>
+<body>
+	<nav class="manu">
+	<a href="#">Home</a>
+	<a href="#">Gallary</a>
+<a href="#">Event</a>
+<a href="#">Feedback</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+<form class="search-box">
+	<input type="text" name="" placeholder="search">
+	<button>search</button>
+</form>
+</nav>
+
+
+</body>
+</html>
